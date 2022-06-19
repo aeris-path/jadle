@@ -1,0 +1,74 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jadle</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="title">Jadle</h1>
+            <h3 id="language">Deutsch</h3>
+        </div>
+        <div id="game">
+            <div class="popup" onclick="restart()">
+                <span class="popuptext" id="myPopup">
+                    <h1 id="popuph1">default.</h1>
+                    <h4 id="popuph4">default.</h4>
+                    <h4 id="filler"></h4>
+                    <h4 id="describ1"></h4>
+                    <h1 id="roundh1"></h1>
+                    <h4 id="describ2"></h4>
+                </span>
+              </div>
+            <div id="letterboxes"></div>
+            <div id="pointer" counter=0>
+
+            </div> 
+            <div id="keyboard">
+                <div class="container">
+                    <div class="wrapper">
+                    <div class="keys">
+                        <input type="button" id="qk" onclick="q()" value="Q" class='TimeCountdown_circle1'>
+                        <input type="button" id="wk" onclick="w()" value="W">
+                        <input type="button" id="ek" onclick="e()" value="E">
+                        <input type="button" id="rk" onclick="r()" value="R">
+                        <input type="button" id="tk" onclick="t()" value="T">
+                        <input type="button" id="yk" onclick="yk()" value="Y">
+                        <input type="button" id="uk" onclick="u()" value="U">
+                        <input type="button" id="ik" onclick="ki()" value="I">
+                        <input type="button" id="ok" onclick="o()" value="O">
+                        <input type="button" id="pk" onclick="p()" value="P">
+                    </div>
+                    <div class="keys">
+                        <input type="button" id="ak" onclick="a()" value="A">
+                        <input type="button" id="sk" onclick="s()" value="S">
+                        <input type="button" id="dk" onclick="d()" value="D">
+                        <input type="button" id="fk" onclick="f()" value="F">
+                        <input type="button" id="gk" onclick="g()" value="G">
+                        <input type="button" id="hk" onclick="h()" value="H">
+                        <input type="button" id="jk" onclick="j()" value="J">
+                        <input type="button" id="kk" onclick="k()" value="K">
+                        <input type="button" id="lk" onclick="l()" value="L">
+                    </div>
+                    <div class="keys">
+                        <input type="button" id="zk" onclick="z()" value="Z">
+                        <input type="button" id="xk" onclick="xk()" value="X">
+                        <input type="button" id="ck" onclick="c()" value="C">
+                        <input type="button" id="vk" onclick="v()" value="V">
+                        <input type="button" id="bk" onclick="b()" value="B">
+                        <input type="button" id="nk" onclick="n()" value="N">
+                        <input type="button" id="mk" onclick="m()" value="M">
+                        <input type="button" id="delk" onclick="del()" value="del">
+                        <input type="button" id="enterk" onclick="enter()" value="enter">
+                    </div>
+                    </div>
+                
+                </div>
+            </div>
+           <div id="dic"></div> 
+        </div>
+        <script language="JavaScript" type="text/javascript" src="C:\Users\paulm\OneDrive\Desktop\jadle\jquery-3.6.0.min.js"></script>
+        <script src="jadle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,228 @@
+
+#header{
+  width: 100%;
+  height: 14%;
+  background-color: rgb(7, 94, 7);
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: center;
+}
+#title{
+  font-family: "Times New Roman", Times, serif; 
+  font-size: 113px;
+  color: rgb(176 176 176);
+  position:relative;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+#language{
+  font-family: "Times New Roman", Times, serif; 
+  font-size: 32px;
+  color: rgb(176 176 176);
+  position:relative;
+  text-align: center;
+  margin-top: -28px;
+  margin-bottom: 0px;
+}
+#game{  
+    width: 100%;
+    height: 86%;
+    background-color: rgb(7, 68, 7);
+    display: flex;
+    justify-content: center;
+}
+#letterboxes{
+    position:relative;
+    top:30px;
+    width: 659px;
+    height: 659px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(5,10%);
+    grid-template-rows: repeat(5,10%);
+    justify-content: center;
+    column-gap: 2.5%;
+    row-gap: 2.5%;
+}
+.square {
+  width: 5%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 5%;
+}
+#pointer{
+    width: 0px;
+    height: 0px;
+    position: absolute;  
+    border-top: 30px solid transparent; /* skyblue */
+    border-right: 55px solid rgb(3, 193, 0); /* limegreen;  */
+    border-bottom: 30px solid transparent; /* orange; */
+    border-left: 35px solid transparent; 
+    top: 18.5%;
+    left: 62%;
+}
+
+#keyboard{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:65%;
+}
+  .container{
+    width: 520px;
+  }
+
+  .wrapper{
+    min-width: 100px;
+    max-width: 1000px;
+    padding: 0px;
+    border-radius: 0px;
+    /*background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73,
+                2px 2px 5px rgba(94,104,121,0.288);
+    /* background: #131419; */
+    /* box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+                -3px -3px 7px rgba(255,255,255,0.05); */
+  }
+
+  .wrapper .keys{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper .keys input{
+    height: 35px;
+    width: 50px;
+    min-width: 15px;
+    padding: 22px;
+    border: none;
+    outline: none;
+    background-color: rgb(83, 83, 83);
+    margin: 2px;
+    color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: default;
+    /* color: #c7c7c7; */
+    /*background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73,
+                 2px 2px 5px rgba(94,104,121,0.288);
+    background: #131419;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+                -3px -3px 7px rgba(255,255,255,0.05); */
+  }
+  .wrapper .keys input:focus{
+    font-size: 19px;
+    color: rgb(40, 40, 40);
+    box-shadow: inset -3px -3px 7px     rgb(70, 70, 70),
+                inset 2px 2px 5px rgba(94,104,121,0.288);
+    /* box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5),
+                inset -3px -3px 7px rgba(255,255,255,0.05); */
+  }
+
+#delk{
+  width:55px;
+}
+#enterk{
+  width:73px;
+}
+  .popup {
+    position: relative;
+
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    height:656px;
+    width: 500px;
+    top: 10px;
+    left:90px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -80px;
+    left:176px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+#popuph1{
+  font-size: 65px;
+}
+#popuph4{
+  font-size: 40px;
+  margin-top:-40px;
+}
+#describ1{
+  font-size: 30px;
+  margin-bottom: -15px;
+}
+#roundh1{
+  margin-top: -15px;
+  margin-bottom: -15px;
+  font-size: 110px;
+}
+#describ2{
+  margin-top: -15px;
+  font-size: 30px;
+}
+
+@keyframes pochen {
+  0% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+  10%{
+    transform: scale(1.075);
+    -webkit-transform: scale(1.075);
+  }
+  30% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.pochenAnim{
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: pochen;
+}
